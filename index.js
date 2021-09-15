@@ -8,12 +8,12 @@ app.use(express.static(__dirname+'/public/'));
 app.get('/', function(req, res){
    res.sendFile(__dirname+'/public/index.html');
 });
-app.get('/web3.min.js', function(req, res) {
-    res.sendFile(__dirname + '/node_modules/web3/dist/web3.min.js');
-});
-app.get('/jquery.min.js', function(req, res) {
-    res.sendFile(__dirname + '/node_modules/jquery/dist/jquery.min.js');
-});
+// app.get('/web3.min.js', function(req, res) {
+//     res.sendFile(__dirname + '/node_modules/web3/dist/web3.min.js');
+// });
+// app.get('/jquery.min.js', function(req, res) {
+//     res.sendFile(__dirname + '/node_modules/jquery/dist/jquery.min.js');
+// });
 let port = 80;
 app.listen(port, () => {
     console.log(`Server listening on http://localhost::${port}, Ctrl+C to stop`) 
